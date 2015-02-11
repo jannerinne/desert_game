@@ -1,0 +1,78 @@
+Tier1 : Mädäntynyt androidi
+-Mekaaninen käsi ja torso makaavat hiekassa
+-Onko sillä tietoisuutta?
+-Jääkö toisesta selviytyjästä saman verran jäljelle, koska hänen jalkansa on mekaaninen?
+-Mekaaniset osat kestävät ikuisuuden, mutta liha on katoavaista.
+
+Tier1 : vihreä lammikko
+-VETTÄ! Onkohan se vielä juotavaa?
+-Ei ole, se saastunutta...
+-Masentavaa...
+
+Alkudialogi :
+-Saatko selville missä suunnassa turvakaupunki on?
+-Pian. Tämä hiekkamyrsky vain häiritsee yhteyksiä.
+-Toivottavasti se löytyy nopeasti.. Meillä ei ole enää juurikaan ruokaa tai juomaa...
+-Sähköt katkeilevat!
+-Sen on pakko olla myrskyn syytä.
+-Mastossa on jotain vikaa!
+-Käyn tarkistamassa sen.
+*masto kaatuu*
+*katto romahtaa*
+-EI!
+-Äkkiä ulos!
+*ulkona*
+-Mitä me nyt teemme...?
+-Ehdotan, että lähdemme oikealle/vasemmalle.
+
+Tier1 : Oudon ison eläimen luut ja raato
+-Mikähän tuo on ollut?
+-Miten se on noin iso?
+-Mikä ihme sen on tappanut?
+-Toivottavasti emme törmää siihen..
+
+Tier2 : Hiekkamato kulkee taustalla
+-Helvetti nyt pitää kiirehtiä!
+
+Tier2 : Hiekkamato syö toisen selviytyjän
+-Ei.. näin ei voi tapahtua...
+-Hiekkamato ei edes tapa saaliitaan vaan ne sulavat elävältä sen vatsassa....
+
+Tier1 : Selviytyjän luut
+-Surullinen näky...
+-Toivottavasti tämä ei ole kohtalomme..
+
+Tier3 : Puhelintolppa ja koppi
+-Miksi nämä ovat tässä...
+-Toimivatkohan ne enää..?
+-Onko tämä vain hallusinaatiota..?
+-*beeb beeb beeb*
+
+Tier3 : Hiekkaan hautautunut sekava robotti
+-*bzzzzzhhh---Can I help yoBBZZZZZZZH*
+-*did you know that help isKKZZZZHHHH*
+-*Thank you please come again*
+-Robotti näyttää olevan sekaisin... En pysty kommunikoimaan sen kanssa..
+-Auta minua..
+
+Tier2 : Luut ja reppu, jossa ei olekkaan mitään hyödyllistä
+-Reppu! Ehkä sieltä löytyy juotavaa!
+-Pullo! Toivottavasti siellä on vettä!
+-Siellä oli öljyä! Saatana! *heittää pullon pois*
+
+Tier3 : Ruumis, jota korppikorpat syövät ja lentävät pois
+-Sad.. I hope that I won't end up like that...
+
+Tier2 : Raunioitunut talo
+-Rakennus! näyttää olevan erittäin huonossa kunnossa.
+-Onkohan tämä ollut, jonkun turvapaikka?
+	[talon sisällä] : monta ruumista; yhdeltä puuttuu alaruumis, yhdetä on ammuttu pää irti, yksi on ampunut itsensä.
+		-huh... Aikamoinen sotku..
+		-Mitähän täällä on tapahtunut...
+		-Etsitään vettä ja ruokaa.. he eivät näytä sitä enää tarvitsevan..
+		-Mitään ei löytynyt.. Ehkä he riitelivät varusteiden puutteesta ja päätyivät tähän.
+
+Tier2 : Silta, joka saattaa romahtaa
+-Onkohan tämä silta turvallinen?
+-En tiedä, voimme kokeilla tai lähteä toiseen suuntaan..
+
