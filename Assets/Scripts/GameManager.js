@@ -6,13 +6,23 @@ var ground : GameObject;
 var background : GameObject;
 
 // Lista mahdollisista tapahtumista. Tapahtumat pitää olla prefabbeina.
-var possibleEvents : List.<Transform> = List.<Transform>();
+var eventGroup1 : List.<Transform> = List.<Transform>();
+var events1 : int = 0; // Montako ryhmän 1 tapahtumaa on tapahtunut.
+
+var eventGroup2 : List.<Transform> = List.<Transform>();
+var events2 : int = 0;
+
+var eventGroup3 : List.<Transform> = List.<Transform>();
+var events3 : int = 0;
+
+var eventGroupNumber : int = 1; // Minkä ryhmän eventtejä otetaan.
 
 var walkSpeed : float = 0.5;               // Pelaajan kävelynopeus.
 var relativeBackgroundSpeed : float = 0.5; // Taustan suhteellinen nopeus pelaajaan.
 var eventTimer : float = 10.0;             // Montako sekuntia pitää kävellä ennen kuin tapahtuma tulee.
 
 private var scroll : float; // Paljonko ollaan liikuttu.
+
 
 function Start () {
 }
@@ -66,11 +76,28 @@ function Update () {
 // Luo satunnaisen tapahtuman.
 // Palauttaa null jos tapahtumia ei ole jäljellä.
 function RandomEvent () {
-	if (possibleEvents.Count == 0) {
-		return null;
+    var eventGroup : List.<Transform> = null;
+    if (eventGroupNumber == 1) {
+    	eventGroup = eventGroup1;
+    	if (++events1 >= 3)
+    		eventGroupNumber++;
+    }
+    else if (eventGroupNumber == 2) {
+    	eventGroup = eventGroup2;
+    	if (++events2 >= 3)
+    		eventGroupNumber++;
+    }
+    else if (eventGroupNumber == 3) {
+    	eventGroup = eventGroup3;
+    	if (++events3 >= 3)
+    		eventGroupNumber++;
+    }
+    
+	if (eventGroup != null && eventGroup.Count > 0) {
+		var index : int = Random.Range(0, eventGroup.Count - 1);
+		var event = eventGroup[index];
+		eventGroup.RemoveAt(index);
+		return event;
 	}
-	var index : int = Random.Range(0, possibleEvents.Count - 1);
-	var event = possibleEvents[index];
-	possibleEvents.RemoveAt(index);
-	return event;
+	return null;
 }
