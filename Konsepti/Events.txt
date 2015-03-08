@@ -1,78 +1,87 @@
-Tier1 : Mädäntynyt androidi
--Mekaaninen käsi ja torso makaavat hiekassa
--Onko sillä tietoisuutta?
--Jääkö toisesta selviytyjästä saman verran jäljelle, koska hänen jalkansa on mekaaninen?
--Mekaaniset osat kestävät ikuisuuden, mutta liha on katoavaista.
-
-Tier1 : vihreä lammikko
--VETTÄ! Onkohan se vielä juotavaa?
--Ei ole, se saastunutta...
--Masentavaa...
-
 Alkudialogi :
--Saatko selville missä suunnassa turvakaupunki on?
--Pian. Tämä hiekkamyrsky vain häiritsee yhteyksiä.
--Toivottavasti se löytyy nopeasti.. Meillä ei ole enää juurikaan ruokaa tai juomaa...
--Sähköt katkeilevat!
--Sen on pakko olla myrskyn syytä.
--Mastossa on jotain vikaa!
--Käyn tarkistamassa sen.
-*masto kaatuu*
-*katto romahtaa*
--EI!
--Äkkiä ulos!
-*ulkona*
--Mitä me nyt teemme...?
--Ehdotan, että lähdemme oikealle/vasemmalle.
+-Saatko selville missä suunnassa turvakaupunki on? / Can you find out in which direction the safetown is?
+-Pian. Tämä hiekkamyrsky vain häiritsee yhteyksiä. / Soon. This sandstorm is disrupting the signal.
+-Toivottavasti se löytyy nopeasti.. Meillä ei ole enää juurikaan ruokaa tai juomaa... / I hope it'll be found quickly... We don't have much food or water left.
+-Sähköt katkeilevat! / The power
+-Sen on pakko olla myrskyn syytä. / That must be because of the storm.
+-Mastossa on jotain vikaa! / There is something wrong at the connection mast!
+-Käyn tarkistamassa sen. / I will go check it out.
+-Ole varovainen! / Be careful!
+*tyyppi kiipeää mastoon* / *a guy climbs the mast*
+*masto kaatuu* / *the mast collapses*
+*katto romahtaa* / *roof of the house collapses*
+*romua putoaa naisen päälle ja hän kuolee* / *stuff falls on the girl and she dies*
+-EI! / NO!
+-Äkkiä ulos! / Get out fast!
+*ulkona* / *outside*
+-Mitä me nyt teemme...? / What are we going to do now...?
+-Ehdotan, että lähdemme tuohon suuntaa, meidän on törmättävä johonkin suojaan tai johonkin. / I suggest we go that way, we have to come by some kind of shelter or something.
 
-Tier1 : Oudon ison eläimen luut ja raato
--Mikähän tuo on ollut?
--Miten se on noin iso?
--Mikä ihme sen on tappanut?
--Toivottavasti emme törmää siihen..
+Tier1 : Mädäntynyt androidi / Rotten android
+*Mekaaninen käsi ja torso makaavat hiekassa* / *mechanic hand and part of torso laying on the sand*
+-Onko sillä tietoisuutta? / Do you think it has consicousness still left there? Than would be horrible.
+-Jääkö toisesta selviytyjästä saman verran jäljelle, koska hänen jalkansa on mekaaninen? / Do you think I'll look like that later.. just a leg on the sand?
+-Mekaaniset osat kestävät ikuisuuden, mutta liha on katoavaista. / Flesh is 
 
-Tier2 : Hiekkamato kulkee taustalla
--Helvetti nyt pitää kiirehtiä!
+Tier1 : vihreä lammikko / green puddle
+-VETTÄ! Onkohan se vielä juotavaa? / WATER! You think it's still drinkable?
+-Ei ole, se saastunutta... / No way, it's clearly polluted...
+-Masentavaa... / How depressing...
 
-Tier2 : Hiekkamato syö toisen selviytyjän
--Ei.. näin ei voi tapahtua...
--Hiekkamato ei edes tapa saaliitaan vaan ne sulavat elävältä sen vatsassa....
+Tier1 : Oudon ison eläimen luut ja raato / carcass of a really big strange animal
+-Mikähän tuo on ollut? / What do you think that has been?
+-Mikä ihme sen on tappanut? / Whatever it was I hope we don't meet the monster that has killed it...
 
-Tier1 : Selviytyjän luut
--Surullinen näky...
--Toivottavasti tämä ei ole kohtalomme..
+Tier1 : Selviytyjän luut / remains of a survivor
+-Surullinen näky... /  a sad sight...
+-Toivottavasti tämä ei ole kohtalomme.. / I hope that is not our destiny.
 
-Tier3 : Puhelintolppa ja koppi
--Miksi nämä ovat tässä...
--Toimivatkohan ne enää..?
--Onko tämä vain hallusinaatiota..?
+Tier1 : Raunioitunut talo / ruined house
+-Rakennus! näyttää olevan erittäin huonossa kunnossa. / Look a building! It seems to be in a really bad shape though.
+-Onkohan tämä ollut, jonkun turvapaikka? / I wonder if this has been someones safehouse.
+	[talon sisällä] : monta ruumista; yhdeltä puuttuu alaruumis, yhdetä on ammuttu pää irti, yksi on ampunut itsensä. /[inside the house] *many bodies, one missing lower body, one missing head, one has shot himself
+		-huh... Aikamoinen sotku.. / wow, quite a mess.
+		-Mitähän täällä on tapahtunut... / What the hell has happened here?
+		-Etsitään vettä ja ruokaa.. he eivät näytä sitä enää tarvitsevan.. / Let's try to find some food or water. Those guys won't be needing it anymore.
+		-Mitään ei löytynyt.. Ehkä he riitelivät varusteiden puutteesta ja päätyivät tähän. / Couldn't find anything. Maybe they were arguing about the lack of food and ended up like this.
+
+
+
+Tier2 : Hiekkamato kulkee taustalla / a huge sandworm moves on the backgroud
+-Helvetti nyt pitää kiirehtiä! / Holy shit we gotta hurry away from here!
+
+Tier2 : Hiekkamato syö toisen selviytyjän / Sandworm ambushes another of the survivors
+-Ei.. näin ei voi tapahtua... / No... This can't happen...
+-Hiekkamato ei edes tapa saaliitaan vaan ne sulavat elävältä sen vatsassa... / Sandworms don't even kill their prays, they just dissolve in their stomachs...
+
+Tier2 : Silta, joka saattaa romahtaa / A bridge that may collapse
+-Onkohan tämä silta turvallinen? / I really wonder if this bridge is safe.
+-En tiedä, voimme kokeilla tai lähteä toiseen suuntaan.. / I don't know. We can try crossing it or go another way.
+	[jos silta hajoaa / if the brigbe collapses]
+		-Pidä kiinni! / Hold on!
+
+Tier2 : Luut ja reppu, jossa ei olekkaan mitään hyödyllistä / Bones and backpack without anything usefull inside.
+-Reppu! Ehkä sieltä löytyy juotavaa! / A backpack! Maybe there is water there!
+-Pullo! *juo siitä* / A bottle! *drinks from it*
+-Siellä oli öljyä! Saatana! *heittää pullon pois* / GAAH! BLAAH! OIL! that was oil! FUCKING HELL! *throws the bottle away*
+
+
+TIER2 END: Your buddy dies and collapses to ground.
+"no.. get up.. I can't do this alone.."
+"are you breathing?... shit...."
+
+Tier3 : Puhelintolppa ja koppi / phone booth and phone post
+-Miksi nämä ovat tässä... / why are these here..?
+-Toimivatkohan ne enää..? / I wonder if they work..?
+-Onko tämä vain hallusinaatiota..? / is this a hallicination..?
 -*beeb beeb beeb*
 
-Tier3 : Hiekkaan hautautunut sekava robotti
+Tier3 : Hiekkaan hautautunut sekava robotti / a robot buried in sand. It is an a very confused state.
 -*bzzzzzhhh---Can I help yoBBZZZZZZZH*
 -*did you know that help isKKZZZZHHHH*
 -*Thank you please come again*
--Robotti näyttää olevan sekaisin... En pysty kommunikoimaan sen kanssa..
--Auta minua..
+-Robotti näyttää olevan sekaisin... En pysty kommunikoimaan sen kanssa.. / the robot doesn't seem to work properly.. I can't communicate with it.
+-Auta minua.. / help me...
 
-Tier2 : Luut ja reppu, jossa ei olekkaan mitään hyödyllistä
--Reppu! Ehkä sieltä löytyy juotavaa!
--Pullo! Toivottavasti siellä on vettä!
--Siellä oli öljyä! Saatana! *heittää pullon pois*
-
-Tier3 : Ruumis, jota korppikorpat syövät ja lentävät pois
+Tier3 : Ruumis, jota korppikorpat syövät ja lentävät pois / a body that vultures a eating. after seeing player they fly away.
 -Sad.. I hope that I won't end up like that...
-
-Tier2 : Raunioitunut talo
--Rakennus! näyttää olevan erittäin huonossa kunnossa.
--Onkohan tämä ollut, jonkun turvapaikka?
-	[talon sisällä] : monta ruumista; yhdeltä puuttuu alaruumis, yhdetä on ammuttu pää irti, yksi on ampunut itsensä.
-		-huh... Aikamoinen sotku..
-		-Mitähän täällä on tapahtunut...
-		-Etsitään vettä ja ruokaa.. he eivät näytä sitä enää tarvitsevan..
-		-Mitään ei löytynyt.. Ehkä he riitelivät varusteiden puutteesta ja päätyivät tähän.
-
-Tier2 : Silta, joka saattaa romahtaa
--Onkohan tämä silta turvallinen?
--En tiedä, voimme kokeilla tai lähteä toiseen suuntaan..
-
