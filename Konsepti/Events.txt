@@ -36,7 +36,7 @@ Tier1 : Selviytyjän luut / remains of a survivor
 -Surullinen näky... /  a sad sight...
 -Toivottavasti tämä ei ole kohtalomme.. / I hope that is not our destiny.
 
-Tier1 : Raunioitunut talo / ruined house
+[WILL BE LEFT OUT OF GAME]Tier1 : Raunioitunut talo / ruined house
 -Rakennus! näyttää olevan erittäin huonossa kunnossa. / Look a building! It seems to be in a really bad shape though.
 -Onkohan tämä ollut, jonkun turvapaikka? / I wonder if this has been someones safehouse.
 	[talon sisällä] : monta ruumista; yhdeltä puuttuu alaruumis, yhdetä on ammuttu pää irti, yksi on ampunut itsensä. /[inside the house] *many bodies, one missing lower body, one missing head, one has shot himself
@@ -50,14 +50,14 @@ Tier1 : Raunioitunut talo / ruined house
 Tier2 : Hiekkamato kulkee taustalla / a huge sandworm moves on the backgroud
 -Helvetti nyt pitää kiirehtiä! / Holy shit we gotta hurry away from here!
 
-Tier2 : Hiekkamato syö toisen selviytyjän / Sandworm ambushes another of the survivors
+[WILL BE LEFT OUT OF GAME]Tier2 : Hiekkamato syö toisen selviytyjän / Sandworm ambushes another of the survivors
 -Ei.. näin ei voi tapahtua... / No... This can't happen...
 -Hiekkamato ei edes tapa saaliitaan vaan ne sulavat elävältä sen vatsassa... / Sandworms don't even kill their prays, they just dissolve in their stomachs...
 
 Tier2 : Silta, joka saattaa romahtaa / A bridge that may collapse
 -Onkohan tämä silta turvallinen? / I really wonder if this bridge is safe.
 -En tiedä, voimme kokeilla tai lähteä toiseen suuntaan.. / I don't know. We can try crossing it or go another way.
-	[jos silta hajoaa / if the brigbe collapses]
+	[WILL BE LEFT OUT OF GAME][jos silta hajoaa / if the brigbe collapses]
 		-Pidä kiinni! / Hold on!
 
 Tier2 : Luut ja reppu, jossa ei olekkaan mitään hyödyllistä / Bones and backpack without anything usefull inside.
