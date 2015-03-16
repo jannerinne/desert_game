@@ -1,0 +1,168 @@
+fileFormatVersion: 2
+guid: c0efe4c9688b30d40945743d60038d41
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: robotti
+    21300002: androidi
+    21300004: luut_maan_alla
+    21300006: luut_ja_reppu
+    21300008: myrkkylammikko
+    21300010: kupla_1
+    21300012: kupla_2
+    21300014: kupla_3
+    21300016: puhelinkoppi
+    21300018: isot_luut
+    21300020: hiekkamato
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: robotti
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1849
+        width: 101
+        height: 142
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: androidi
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1683
+        width: 137
+        height: 137
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: luut_maan_alla
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1557
+        width: 86
+        height: 85
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: luut_ja_reppu
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1479
+        width: 144
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: myrkkylammikko
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 1463
+        width: 147
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kupla_1
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 1500
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kupla_2
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 1511
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kupla_3
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 1519
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: puhelinkoppi
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 1530
+        width: 403
+        height: 458
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: isot_luut
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 1802
+        width: 765
+        height: 196
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: hiekkamato
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 835
+        width: 1153
+        height: 951
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
