@@ -23,14 +23,47 @@ var relativeBackgroundSpeed : float = 0.3;  // Taustan suhteellinen nopeus pelaa
 var relativeBackground2Speed : float = 0.1; // Taaemman taustan suhteellinen nopeus pelaajaan.
 var eventTimer : float = 10.0;              // Montako sekuntia pitää kävellä ennen kuin tapahtuma tulee.
 
+var dialogue : List.<String> = List.<String>(); // Menossa oleva dialogi.
+
 private var scroll : float; // Paljonko ollaan liikuttu.
 private var playerDir : float = 1; // Pelaajan suunta, joko -1 tai 1.
 
+private var style : GUIStyle;
+
+
 function Start () {
+	style = GUIStyle();
+	style.wordWrap = true;
+	style.fontSize = 20;
+	style.normal.textColor = Color.white;
+	style.alignment = TextAnchor.MiddleCenter;
+}
+
+function OnGUI() {
+	if (dialogue.Count > 0) {
+		var w = Screen.width;
+		var h = Screen.height;
+		var rect = Rect(w * 0.333f, h * 0.1f, w * 0.333f, h * 0.3f);
+		GUI.Box(rect, ""); // todo: lisää kuva
+		GUI.Box(rect, dialogue[0], style);
+	}
+}
+
+function PlayerCanAct() {
+  return dialogue.Count == 0;
 }
 
 function Update () {
+	if (dialogue.Count > 0 && Input.anyKeyDown) {
+		dialogue.RemoveAt(0);
+	}
+	
+	if (PlayerCanAct()) {
+		UpdatePlayer();
+	}
+}
 
+function UpdatePlayer () {
 	// ------- Liikkuminen -------
 	var direction = Input.GetAxis("Horizontal");
 	
