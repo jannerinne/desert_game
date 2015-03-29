@@ -13,6 +13,11 @@ TextureImporter:
     21300016: puhelinkoppi
     21300018: isot_luut
     21300020: hiekkamato
+    21300022: "tuulenpes\xE4"
+    21300024: kaktus1
+    21300026: kaktus2
+    21300028: kaktus3
+    21300030: ruumis
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -161,6 +166,56 @@ TextureImporter:
         y: 835
         width: 1153
         height: 951
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: "tuulenpes\xE4"
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1371
+        width: 90
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kaktus1
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 838
+        width: 149
+        height: 386
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kaktus2
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 837
+        width: 203
+        height: 387
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: kaktus3
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 450
+        width: 154
+        height: 387
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ruumis
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1371
+        width: 276
+        height: 84
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
