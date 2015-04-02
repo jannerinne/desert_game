@@ -1,0 +1,223 @@
+fileFormatVersion: 2
+guid: 91a316217a560b84d925f3446b9455b3
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: myrkkylammikko_0
+    21300002: myrkkylammikko_1
+    21300004: myrkkylammikko_2
+    21300006: myrkkylammikko_3
+    21300008: myrkkylammikko_4
+    21300010: myrkkylammikko_5
+    21300012: myrkkylammikko_6
+    21300014: myrkkylammikko_7
+    21300016: myrkkylammikko_8
+    21300018: myrkkylammikko_9
+    21300020: myrkkylammikko_10
+    21300022: myrkkylammikko_11
+    21300024: myrkkylammikko_12
+    21300026: myrkkylammikko_13
+    21300028: myrkkylammikko_14
+    21300030: myrkkylammikko_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: myrkkylammikko_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 252
+        width: 145
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: myrkkylammikko_1
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 252
+        width: 145
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: myrkkylammikko_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 216
+        width: 145
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: myrkkylammikko_3
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 216
+        width: 145
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: myrkkylammikko_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 180
+        width: 145
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: myrkkylammikko_5
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 180
+        width: 145
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: myrkkylammikko_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 145
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: myrkkylammikko_7
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 144
+        width: 145
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: myrkkylammikko_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 108
+        width: 145
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: myrkkylammikko_9
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 108
+        width: 145
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: myrkkylammikko_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 72
+        width: 145
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: myrkkylammikko_11
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 72
+        width: 145
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: myrkkylammikko_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 36
+        width: 145
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: myrkkylammikko_13
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 36
+        width: 145
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: myrkkylammikko_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 145
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: myrkkylammikko_15
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 0
+        width: 145
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
