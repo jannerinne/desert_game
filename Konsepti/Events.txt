@@ -4,43 +4,43 @@ Woman: Monique
 Black guy: Tyrone
 
 Alkudialogi :
-Shaun: Can you find out in which direction the safetown is?
+Shaun: Can you find out how we can get to Safetown?
 
-Darin: Soon. This sandstorm is disrupting the signal.
+Darin: Soon. This sandstorm is messing with the signal.
 
-Monique: I hope it'll be found quickly... We don't have much food or water left.
+Monique: I hope we find it quickly...We don't have much foor or water left...
 
-Shaun: God damn it. The last place we were was overrun by bandits and most of our stuff was left there...
+Shaun: God Damn It! Most of our supplies were in the last safehouse we were holed up in, but damn bandits overran the whole area.
 
-Monique: I woudn't have even got out if it wan't for Darin. I haven't even thanked you properly for that. Thank you for saving me.
+Monique: I wouldn't have made it if it wasn't for Darin. I haven't even thanked you properly. Thank you so much for saving my life.
 
-Darin: Oh, that.. that was nothing.
+Darin: Oh that...it was nothing.
 
 *3 sec pause when nothing happens*
 
 *power outage*
 
-Darin: The power is going out!
+Darin: The power is failing!
 
-Tyrone: That must be because of the storm.
+Tyrone: Must be due to the storm
 
-Shaun: There is something wrong at the connection mast!
+Shaun: There must be something wrong with the satellite tower!
 
-Tyrone: I will go check it out.
+Tyrone: I'll go check it out
 
-Monique: Be careful!
+Monique: Please be careful!
 
 *black guy runs RIGHT*
 
-*black guy climbs the mast*
+*black guy climbs the tower*
 
-Tyrone: This is all fucked.. How can a storm do somethi-...
+Tyrone: Everything's fucked...How can a storm do thi...
 
 Tyrone: ...
 
-Tyrone: Shit, the mast is... it's going to fall over in this storm...
+Tyrone: Shit, the tower is... it's going to fall over in this storm...
 
-Tyrone: AAAAAAAAAAAAA!!! *shown at the same time as falling animation*
+Tyrone: AAAAHHHHHHH!!! *shown at the same time as falling animation*
 
 *the mast collapses*
 
@@ -50,13 +50,13 @@ Tyrone: AAAAAAAAAAAAA!!! *shown at the same time as falling animation*
 
 *debris falls on the girl and she dies*
 
-Darin: NO! Monique!
+Darin: MONIQUE!
 
-Shaun: Let's get out fast!
+Shaun: We have to get out!
 
-Darin: But we..! We have to do something! SHE CAN'T BE DEAD!
+Darin: We can't just leave her! She might still be alive!
 
-Shaun: LET'S GET OUT BEFORE WE DIE TOO!
+Shaun: THERE'S NOTHING WE CAN DO!
 
 *they run LEFT*
 
@@ -66,65 +66,67 @@ Shaun: LET'S GET OUT BEFORE WE DIE TOO!
 
 Darin: ...
 
-Darin: I.. I'm sure we could have saved her...
+Darin: I.. I'm sure we could have...
 
 Shaun: ...
 
-Shaun: What are we going to do now...?
+Shaun: ..There's no use in second guessing any of this. If we had died, would that have made their sacrifices any better? All we can do is move forward.
 
-Darin: We have to find a shelter.. Yeah, we have to come by some kind of shelter or something if we just keep walking.
+Darin: You...you're right...All right let's go find some shelter. We'll mourn for them later.
 
 
 Tier1 : Rotten android
 *mechanic hand and part of torso laying on the sand*
 
-Shaun: Do you think it has consicousness still left there? Than would be horrible.
+Shaun: Do you think it has any consciousness left in there? That would be...
 
-Darin: Do you think I'll look like that later.. just a leg on the sand?
+Darin: Do you thin I'll end up like that one day? Just a leg in the sand?
 
-Shaun: Flesh is temporal but machines are forever.
+Shaun: Flesh fades..but machines are built to last.
 
 
 Tier1 : green puddle
 
-Darin: WATER! You think it's still drinkable?
+Darin: WATER! Do you think we can drink it?
 
-Shaun: No way, it's clearly polluted...
+Shaun: No way man, it's clearly toxic.
 
 Darin: How depressing...
 
 
 Tier1 : carcass of a really big strange animal
 
-Darin: What do you think that has been?
+Darin: What do you think this thing was?
 
-Shaun: Whatever it was I hope we don't meet the monster that has killed it...
+Shaun: Whatever it is, I hope we don't run into whatever killed it out here.
 
 
-Tier1 : Selviytyjän luut / remains of a survivor
+Tier1 : remains of a survivor
 
-Darin: A sad sight...
+Darin: How sad...
 
-Shaun: I hope that is not our destiny.
+Shaun: Let's hope we avoid his fate.
 
 
 Tier1 : ruined house
 
-Darin: Look a building! It seems to be in a really bad shape though.
+Darin: Look! A building! It looks pretty messed up, though.
 
-Shaun: I wonder if this has been someones safehouse.
+Shaun: I wonder if this is someone's safehouse...
 
 -black screen fade-
 
-	[inside the house] *three bodies, one has shot herself*
+[inside the house] *three bodies, one has shot herself*
 
-		Shaun: Wow, quite a mess.
+Shaun: Wow! What a mess.
 
-		Darin: What the hell has happened here?
+Darin: What the hell happened in here!?!
 
-		Shaun: Let's try to find some food or water. Those guys won't be needing it anymore.
+Shaun: Let's look around for supplies. These guys won't be needing it anymore.
 
-		Shaun: Couldn't find anything. Maybe they were arguing about the lack of supplies and ended up like this.
+-black screen fade-
+
+Shaun: Couldn't find a damn thing. Maybe they ended up that way because they had no supplies left..
 
 -black screen fade-
 
@@ -134,21 +136,21 @@ Shaun: I wonder if this has been someones safehouse.
 
 Tier2 : a huge sandworm moves on the backgroud
 
-Darin: Holy shit we gotta hurry away from here!
+Darin : Holy Shit! We gotta get out of here!
 
 *movement speed increased for 3 seconds*
 
 
 Tier2 : A bridge
 
-Shaun: I really wonder if this bridge is safe.
+Shaun: I wonder if this bridge is safe to cross.
 
-Darin: I don't know. We can try crossing it or go another way.
+Darin:  I don't know , man. We can try crossing it, or find another way around.
 
 
 Tier2 : Bones and backpack without anything usefull inside.
 
-Shaun: A backpack! Maybe there is water there!
+Shaun: A backpack! Maybe there's some water in there!
 
 Darin: A bottle! *drinks from it*
 
@@ -157,26 +159,25 @@ Darin: GAAH! BLAAH! OIL! That was oil! FUCKING HELL! *throws the bottle away*
 
 TIER2 END: *Your buddy dies and collapses to ground.*
 
-Shaun: No.. get up.. I can't do this alone..
-
-Shaun: Are you breathing?...
+Shaun: Damn it man, don't die on me! Come on, breath!
 
 Shaun: shit...
 
+
 Tier3 : phone booth and phone post
 
-Shaun: Why are these here..?
+Shaun: What is something like this doing here?
 
-Shaun: I wonder if they work..?
+Shaun: I wonder if it works...
 
-Shaun: Is this a hallicination..?
+Shaun: Am I hallucinating?
 
 
 Tier3 : a robot buried in sand. It is an a very confused state.
 
 *bzzzzzhhh---Can I help yoBBZZZZZZZH*
 
-Shaun: The robot doesn't seem to work properly.. I can't communicate with it.
+Shaun: The robot seems busted. I won't be able to communicate with it.
 
 *did you know that help isKKZZZZHHHH*
 
@@ -186,7 +187,8 @@ Shaun: ...
 
 
 Tier3 : a body that vultures a eating. after seeing player they fly away.
-Shaun: Sad.. I hope that I won't end up like that...
+
+Shaun: How sad...I hope I won't end up like that...
 
 TIER3 END
 Player collapses to ground.
