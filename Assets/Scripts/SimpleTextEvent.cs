@@ -17,6 +17,7 @@ public class SimpleTextEvent : MonoBehaviour {
 		style.fontSize = 20;
 		style.normal.textColor = Color.white;
 		style.alignment = TextAnchor.MiddleCenter;
+		style.font = manager.font;
 	}
 
 	bool PlayerIsNear() {

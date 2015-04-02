@@ -9,6 +9,16 @@ public class Alkuanimaatio : MonoBehaviour {
 	public Sprite sprite2;
 	public Sprite sprite3;
 
+	public GameObject masto;
+	public GameObject debris;
+
+	public GameObject player;
+	private Vector3 playerS;
+	public GameObject woman;
+	private Vector3 womanS;
+	public GameObject friend;
+	private Vector3 friendS;
+
 	private List<string> dialogue = new List<string>(); // Menossa oleva dialogi.
 
 	private GUIStyle style;
@@ -16,6 +26,10 @@ public class Alkuanimaatio : MonoBehaviour {
 	public Font font;
 
 	void Start () {
+		womanS = woman.transform.position;
+		playerS = player.transform.position;
+		friendS = friend.transform.position;
+
 		style = new GUIStyle();
 		style.wordWrap = true;
 		style.fontSize = 20;
@@ -98,6 +112,38 @@ public class Alkuanimaatio : MonoBehaviour {
 	// -----------------------------------------------------------
 
 	void Climb() {
+		SetSprite(sprite3);
+		woman.transform.position = new Vector3(0f, -16f, 0f);
+		player.transform.position = new Vector3(0f, -16f, 0f);
+		friend.transform.position = new Vector3(0f, -16f, 0f);
+		masto.transform.position = new Vector3(-6.68f, -6.94f, 0f);
+		Invoke("Fall", 3f);
+	}
+
+	void Fall() {
+		masto.GetComponent<Masto>().Fall();
+		Invoke("BackInside", 2f);
+	}
+
+	void BackInside() {
+		SetSprite(sprite2);
+		woman.transform.position = womanS;
+		player.transform.position = playerS;
+		friend.transform.position = friendS;
+		Destroy(masto);
+		debris.GetComponent<Debris>().Fall();
+		Invoke("DebrisFallen", 2f);
+	}
+
+	void DebrisFallen() {
 		dialogue.Add("NO!");
+		dialogue.Add("Get out fast!");
+		dialogue.Add("#Outside");
+	}
+
+	// -----------------------------------------------------------
+
+	void Outside() {
+		Application.LoadLevel(2);
 	}
 }
