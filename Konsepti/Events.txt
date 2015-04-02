@@ -1,87 +1,196 @@
+Main character: Shaun
+Buddy: Darin
+Woman: Monique
+Black guy: Tyrone
+
 Alkudialogi :
--Saatko selville missä suunnassa turvakaupunki on? / Can you find out in which direction the safetown is?
--Pian. Tämä hiekkamyrsky vain häiritsee yhteyksiä. / Soon. This sandstorm is disrupting the signal.
--Toivottavasti se löytyy nopeasti.. Meillä ei ole enää juurikaan ruokaa tai juomaa... / I hope it'll be found quickly... We don't have much food or water left.
--Sähköt katkeilevat! / The power
--Sen on pakko olla myrskyn syytä. / That must be because of the storm.
--Mastossa on jotain vikaa! / There is something wrong at the connection mast!
--Käyn tarkistamassa sen. / I will go check it out.
--Ole varovainen! / Be careful!
-*tyyppi kiipeää mastoon* / *a guy climbs the mast*
-*masto kaatuu* / *the mast collapses*
-*katto romahtaa* / *roof of the house collapses*
-*romua putoaa naisen päälle ja hän kuolee* / *debris falls on the girl and she dies*
--EI! / NO!
--Äkkiä ulos! / Get out fast!
-*ulkona* / *outside*
--Mitä me nyt teemme...? / What are we going to do now...?
--Ehdotan, että lähdemme tuohon suuntaa, meidän on törmättävä johonkin suojaan tai johonkin. / I suggest we go that way, we have to come by some kind of shelter or something.
+Shaun: Can you find out in which direction the safetown is?
 
-Tier1 : Mädäntynyt androidi / Rotten android
-*Mekaaninen käsi ja torso makaavat hiekassa* / *mechanic hand and part of torso laying on the sand*
--Onko sillä tietoisuutta? / Do you think it has consicousness still left there? Than would be horrible.
--Jääkö toisesta selviytyjästä saman verran jäljelle, koska hänen jalkansa on mekaaninen? / Do you think I'll look like that later.. just a leg on the sand?
--Mekaaniset osat kestävät ikuisuuden, mutta liha on katoavaista. / Flesh is 
+Darin: Soon. This sandstorm is disrupting the signal.
 
-Tier1 : vihreä lammikko / green puddle
--VETTÄ! Onkohan se vielä juotavaa? / WATER! You think it's still drinkable?
--Ei ole, se saastunutta... / No way, it's clearly polluted...
--Masentavaa... / How depressing...
+Monique: I hope it'll be found quickly... We don't have much food or water left.
 
-Tier1 : Oudon ison eläimen luut ja raato / carcass of a really big strange animal
--Mikähän tuo on ollut? / What do you think that has been?
--Mikä ihme sen on tappanut? / Whatever it was I hope we don't meet the monster that has killed it...
+Shaun: God damn it. The last place we were was overrun by bandits and most of our stuff was left there...
+
+Monique: I woudn't have even got out if it wan't for Darin. I haven't even thanked you properly for that. Thank you for saving me.
+
+Darin: Oh, that.. that was nothing.
+
+*3 sec pause when nothing happens*
+
+*power outage*
+
+Darin: The power is going out!
+
+Tyrone: That must be because of the storm.
+
+Shaun: There is something wrong at the connection mast!
+
+Tyrone: I will go check it out.
+
+Monique: Be careful!
+
+*black guy runs RIGHT*
+
+*black guy climbs the mast*
+
+Tyrone: This is all fucked.. How can a storm do somethi-...
+
+Tyrone: ...
+
+Tyrone: Shit, the mast is... it's going to fall over in this storm...
+
+Tyrone: AAAAAAAAAAAAA!!! *shown at the same time as falling animation*
+
+*the mast collapses*
+
+-black screen fade-
+
+*roof of the house collapses*
+
+*debris falls on the girl and she dies*
+
+Darin: NO! Monique!
+
+Shaun: Let's get out fast!
+
+Darin: But we..! We have to do something! SHE CAN'T BE DEAD!
+
+Shaun: LET'S GET OUT BEFORE WE DIE TOO!
+
+*they run LEFT*
+
+-black screen fade-
+
+*outside*
+
+Darin: ...
+
+Darin: I.. I'm sure we could have saved her...
+
+Shaun: ...
+
+Shaun: What are we going to do now...?
+
+Darin: We have to find a shelter.. Yeah, we have to come by some kind of shelter or something if we just keep walking.
+
+
+Tier1 : Rotten android
+*mechanic hand and part of torso laying on the sand*
+
+Shaun: Do you think it has consicousness still left there? Than would be horrible.
+
+Darin: Do you think I'll look like that later.. just a leg on the sand?
+
+Shaun: Flesh is temporal but machines are forever.
+
+
+Tier1 : green puddle
+
+Darin: WATER! You think it's still drinkable?
+
+Shaun: No way, it's clearly polluted...
+
+Darin: How depressing...
+
+
+Tier1 : carcass of a really big strange animal
+
+Darin: What do you think that has been?
+
+Shaun: Whatever it was I hope we don't meet the monster that has killed it...
+
 
 Tier1 : Selviytyjän luut / remains of a survivor
--Surullinen näky... /  a sad sight...
--Toivottavasti tämä ei ole kohtalomme.. / I hope that is not our destiny.
 
-[WILL BE LEFT OUT OF GAME]Tier1 : Raunioitunut talo / ruined house
--Rakennus! näyttää olevan erittäin huonossa kunnossa. / Look a building! It seems to be in a really bad shape though.
--Onkohan tämä ollut, jonkun turvapaikka? / I wonder if this has been someones safehouse.
-	[talon sisällä] : monta ruumista; yhdeltä puuttuu alaruumis, yhdetä on ammuttu pää irti, yksi on ampunut itsensä. /[inside the house] *many bodies, one missing lower body, one missing head, one has shot himself
-		-huh... Aikamoinen sotku.. / wow, quite a mess.
-		-Mitähän täällä on tapahtunut... / What the hell has happened here?
-		-Etsitään vettä ja ruokaa.. he eivät näytä sitä enää tarvitsevan.. / Let's try to find some food or water. Those guys won't be needing it anymore.
-		-Mitään ei löytynyt.. Ehkä he riitelivät varusteiden puutteesta ja päätyivät tähän. / Couldn't find anything. Maybe they were arguing about the lack of food and ended up like this.
+Darin: A sad sight...
+
+Shaun: I hope that is not our destiny.
 
 
+Tier1 : ruined house
 
-Tier2 : Hiekkamato kulkee taustalla / a huge sandworm moves on the backgroud
--Helvetti nyt pitää kiirehtiä! / Holy shit we gotta hurry away from here!
+Darin: Look a building! It seems to be in a really bad shape though.
 
-[WILL BE LEFT OUT OF GAME]Tier2 : Hiekkamato syö toisen selviytyjän / Sandworm ambushes another of the survivors
--Ei.. näin ei voi tapahtua... / No... This can't happen...
--Hiekkamato ei edes tapa saaliitaan vaan ne sulavat elävältä sen vatsassa... / Sandworms don't even kill their prays, they just dissolve in their stomachs...
+Shaun: I wonder if this has been someones safehouse.
 
-Tier2 : Silta, joka saattaa romahtaa / A bridge that may collapse
--Onkohan tämä silta turvallinen? / I really wonder if this bridge is safe.
--En tiedä, voimme kokeilla tai lähteä toiseen suuntaan.. / I don't know. We can try crossing it or go another way.
-	[WILL BE LEFT OUT OF GAME][jos silta hajoaa / if the brigbe collapses]
-		-Pidä kiinni! / Hold on!
+-black screen fade-
 
-Tier2 : Luut ja reppu, jossa ei olekkaan mitään hyödyllistä / Bones and backpack without anything usefull inside.
--Reppu! Ehkä sieltä löytyy juotavaa! / A backpack! Maybe there is water there!
--Pullo! *juo siitä* / A bottle! *drinks from it*
--Siellä oli öljyä! Saatana! *heittää pullon pois* / GAAH! BLAAH! OIL! that was oil! FUCKING HELL! *throws the bottle away*
+	[inside the house] *three bodies, one has shot herself*
+
+		Shaun: Wow, quite a mess.
+
+		Darin: What the hell has happened here?
+
+		Shaun: Let's try to find some food or water. Those guys won't be needing it anymore.
+
+		Shaun: Couldn't find anything. Maybe they were arguing about the lack of supplies and ended up like this.
+
+-black screen fade-
+
+*outside again*
 
 
-TIER2 END: Your buddy dies and collapses to ground.
-"no.. get up.. I can't do this alone.."
-"are you breathing?... shit...."
 
-Tier3 : Puhelintolppa ja koppi / phone booth and phone post
--Miksi nämä ovat tässä... / why are these here..?
--Toimivatkohan ne enää..? / I wonder if they work..?
--Onko tämä vain hallusinaatiota..? / is this a hallicination..?
--*beeb beeb beeb*
+Tier2 : a huge sandworm moves on the backgroud
 
-Tier3 : Hiekkaan hautautunut sekava robotti / a robot buried in sand. It is an a very confused state.
--*bzzzzzhhh---Can I help yoBBZZZZZZZH*
--*did you know that help isKKZZZZHHHH*
--*Thank you please come again*
--Robotti näyttää olevan sekaisin... En pysty kommunikoimaan sen kanssa.. / the robot doesn't seem to work properly.. I can't communicate with it.
--Auta minua.. / help me...
+Darin: Holy shit we gotta hurry away from here!
 
-Tier3 : Ruumis, jota korppikorpat syövät ja lentävät pois / a body that vultures a eating. after seeing player they fly away.
--Sad.. I hope that I won't end up like that...
+*movement speed increased for 3 seconds*
+
+
+Tier2 : A bridge
+
+Shaun: I really wonder if this bridge is safe.
+
+Darin: I don't know. We can try crossing it or go another way.
+
+
+Tier2 : Bones and backpack without anything usefull inside.
+
+Shaun: A backpack! Maybe there is water there!
+
+Darin: A bottle! *drinks from it*
+
+Darin: GAAH! BLAAH! OIL! That was oil! FUCKING HELL! *throws the bottle away*
+
+
+TIER2 END: *Your buddy dies and collapses to ground.*
+
+Shaun: No.. get up.. I can't do this alone..
+
+Shaun: Are you breathing?...
+
+Shaun: shit...
+
+Tier3 : phone booth and phone post
+
+Shaun: Why are these here..?
+
+Shaun: I wonder if they work..?
+
+Shaun: Is this a hallicination..?
+
+
+Tier3 : a robot buried in sand. It is an a very confused state.
+
+*bzzzzzhhh---Can I help yoBBZZZZZZZH*
+
+Shaun: The robot doesn't seem to work properly.. I can't communicate with it.
+
+*did you know that help isKKZZZZHHHH*
+
+*Thank you please come again*
+
+Shaun: ...
+
+
+Tier3 : a body that vultures a eating. after seeing player they fly away.
+Shaun: Sad.. I hope that I won't end up like that...
+
+TIER3 END
+Player collapses to ground.
+
+Screen fades to black.
+
+Back to title screen.
