@@ -31,6 +31,8 @@ public class GameManagerC : MonoBehaviour {
 	private float playerDir = 1f; // Pelaajan suunta, joko -1 tai 1.
 	
 	private GUIStyle style;
+
+	public Font font;
 	
 	
 	void Start () {
@@ -39,6 +41,7 @@ public class GameManagerC : MonoBehaviour {
 		style.fontSize = 20;
 		style.normal.textColor = Color.white;
 		style.alignment = TextAnchor.MiddleCenter;
+		style.font = font;
 	}
 	
 	void OnGUI() {
