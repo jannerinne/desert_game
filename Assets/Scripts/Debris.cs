@@ -17,8 +17,15 @@ public class Debris : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (falling && transform.position.y > target.position.y) {
-			speed += Time.deltaTime * 0.7f;
+			speed += Time.deltaTime * 0.5f;
 			transform.Translate(0f, -speed, 0f);
+
+			for (int i=0; i < transform.childCount; i++) {
+				Transform deb = transform.GetChild(i);
+				if (deb.gameObject.name.StartsWith("falling")) {
+					deb.Rotate(Vector3.forward, Random.Range(300f, 800f) * Time.deltaTime);
+				}
+			}
 		}
 	}
 

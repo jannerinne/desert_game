@@ -9,7 +9,6 @@ public class SimpleTextEvent : MonoBehaviour {
 	private bool used = false;
 	private GUIStyle style;
 
-	
 	void Start () {
 		manager = GameObject.Find("GameManager").GetComponent<GameManagerC>();
 		style = new GUIStyle();
