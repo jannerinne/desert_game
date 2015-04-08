@@ -50,18 +50,18 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 701
-        height: 525
+        width: 809
+        height: 720
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: talot_1
       rect:
         serializedVersion: 2
-        x: 709
-        y: 129
-        width: 694
-        height: 591
+        x: 820
+        y: 0
+        width: 696
+        height: 720
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
