@@ -46,6 +46,8 @@ public class GameManagerC : MonoBehaviour {
 
 	private AudioSource footstepSound;
 
+	public AudioClip thudSound;
+
 
 	void Start () {
 		footstepSound = GetComponent<AudioSource>();
@@ -79,10 +81,15 @@ public class GameManagerC : MonoBehaviour {
 
 	public void KillPlayer() {
 		dead = true;
+		Invoke("PlayThud", 3.5f);
 		var anim = player.GetComponent<Animator>();
 		anim.SetBool("Dead", true);
 		anim.SetFloat("PlayerSpeed", 0f);
 		Invoke("GoToMainMenu", 12f);
+	}
+
+	private void PlayThud() {
+		AudioSource.PlayClipAtPoint(thudSound, Vector3.zero, 1.0f);
 	}
 
 	private void GoToMainMenu() {
@@ -95,6 +102,9 @@ public class GameManagerC : MonoBehaviour {
 		}
 
 		if (dead) {
+			if (footstepSound.isPlaying) {
+				footstepSound.Stop();
+			}
 			return;
 		}
 
@@ -201,6 +211,7 @@ public class GameManagerC : MonoBehaviour {
 					Instantiate(ev, friend.transform.position, Quaternion.identity);
 					Destroy(friend);
 					friend = null;
+					Invoke("PlayThud", 1.7f);
 				}
 				else if (ev != null) {
 					// Luo uuden tapahtuman.

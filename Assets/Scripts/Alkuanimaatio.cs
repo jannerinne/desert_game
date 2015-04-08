@@ -182,6 +182,7 @@ public class Alkuanimaatio : MonoBehaviour {
 	}
 
 	void FallFade() {
+		GetComponent<AudioSource>().Play();
 		FadeTo(1f, "BackInside");
 	}
 
