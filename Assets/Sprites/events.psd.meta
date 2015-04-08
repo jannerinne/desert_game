@@ -18,6 +18,7 @@ TextureImporter:
     21300026: kaktus2
     21300028: kaktus3
     21300030: ruumis
+    21300032: events_0
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -178,6 +179,16 @@ TextureImporter:
         height: 84
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: events_0
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 732
+        width: 89
+        height: 100
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
