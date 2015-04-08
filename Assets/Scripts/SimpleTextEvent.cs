@@ -6,7 +6,7 @@ public class SimpleTextEvent : MonoBehaviour {
 	public string[] eventDialogText;
 
 	private GameManagerC manager;
-	private bool used = false;
+	public bool used = false;
 	private GUIStyle style;
 
 	void Start () {
@@ -28,7 +28,7 @@ public class SimpleTextEvent : MonoBehaviour {
 			var w = Screen.width;
 			var h = Screen.height;
 			var rect = new Rect(w * 0.4f, h * 0.1f, w * 0.2f, h * 0.1f);
-			GUI.Box(rect, ""); // todo: lisää kuva
+			GUI.Box(rect, "");
 			GUI.Box(rect, "Press Space", style);
 		}
 	}
@@ -37,7 +37,8 @@ public class SimpleTextEvent : MonoBehaviour {
 		if (!used && manager.PlayerCanAct() && Input.GetKeyDown(KeyCode.Space) && PlayerIsNear()) {
 			used = true;
 			foreach (string line in eventDialogText) {
-				manager.dialogue.Add(line);
+				//manager.dialogue.Add(line);
+				manager.AddDialog(line);
 			}
 			//Destroy(gameObject);
 		}

@@ -13,13 +13,13 @@ public class GameManagerC : MonoBehaviour {
 	
 	// Lista mahdollisista tapahtumista. Tapahtumat pitää olla prefabbeina.
 	public List<Transform> eventGroup1 = new List<Transform>();
-	int events1 = 0; // Montako ryhmän 1 tapahtumaa on tapahtunut.
+	//int events1 = 0; // Montako ryhmän 1 tapahtumaa on tapahtunut.
 	
 	public List<Transform> eventGroup2 = new List<Transform>();
-	int events2 = 0;
+	//int events2 = 0;
 	
 	public List<Transform> eventGroup3 = new List<Transform>();
-	int events3 = 0;
+	//int events3 = 0;
 
 	public List<Transform> decorEvents = new List<Transform>();
 	public float decorTimer = 8f;
@@ -44,8 +44,11 @@ public class GameManagerC : MonoBehaviour {
 	private float cooldown = 0f;
 	private bool dead = false;
 
+	private AudioSource footstepSound;
+
 
 	void Start () {
+		footstepSound = GetComponent<AudioSource>();
 		normalWalkSpeed = walkSpeed;
 		style = new GUIStyle();
 		style.wordWrap = true;
@@ -63,6 +66,11 @@ public class GameManagerC : MonoBehaviour {
 			GUI.Box(rect, ""); // todo: lisää kuva
 			GUI.Box(rect, dialogue[0], style);
 		}
+	}
+
+	public void AddDialog(string msg) {
+		cooldown = 0.5f;
+		dialogue.Add(msg);
 	}
 	
 	public bool PlayerCanAct() {
@@ -144,6 +152,11 @@ public class GameManagerC : MonoBehaviour {
 			var movement = walkSpeed * Time.smoothDeltaTime * direction;
 			eventTimer -= Time.smoothDeltaTime;
 			decorTimer -= Time.smoothDeltaTime;
+
+			// Kävelyääni.
+			if (!footstepSound.isPlaying) {
+				footstepSound.Play();
+			}
 			
 			// Liikuta maata ja taustaa.
 			scroll += movement;
@@ -158,6 +171,11 @@ public class GameManagerC : MonoBehaviour {
 				if (Mathf.Abs(obj.transform.position.x) > ground.renderer.bounds.size.x * 0.5 + 0.3) {
 					Destroy(obj);
 				}
+			}
+		}
+		else {
+			if (footstepSound.isPlaying) {
+				footstepSound.Stop();
 			}
 		}
 		
@@ -201,6 +219,8 @@ public class GameManagerC : MonoBehaviour {
 	// Palauttaa null jos tapahtumia ei ole jäljellä.
 	Transform RandomEvent () {
 		List<Transform> eventGroup = null;
+
+		/*
 		if (eventGroupNumber == 1) {
 			eventGroup = eventGroup1;
 			if (++events1 >= 3)
@@ -217,6 +237,29 @@ public class GameManagerC : MonoBehaviour {
 			eventGroup = eventGroup3;
 			if (++events3 >= 3)
 				eventGroupNumber++;
+		}
+		*/
+
+		if (eventGroupNumber == 1) {
+			eventGroup = eventGroup1;
+			if (eventGroup1.Count == 0) {
+				eventGroupNumber++;
+				eventGroup = eventGroup2;
+			}
+		}
+		else if (eventGroupNumber == 2) {
+			eventGroup = eventGroup2;
+			if (eventGroup2.Count == 0) {
+				eventGroupNumber++;
+				eventGroup = eventGroup3;
+				return deadFriendEvent;
+			}
+		}
+		else if (eventGroupNumber == 3) {
+			eventGroup = eventGroup3;
+			if (eventGroup3.Count == 0) {
+				eventGroupNumber++;
+			}
 		}
 
 		if (eventGroup != null && eventGroup.Count > 0) {

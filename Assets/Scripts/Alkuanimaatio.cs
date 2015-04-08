@@ -132,7 +132,7 @@ public class Alkuanimaatio : MonoBehaviour {
 	}
 
 	void RunRight() {
-		tyrone.GetComponent<IntroCharacter>().Run(1);
+		tyrone.GetComponent<IntroCharacter>().Run(2);
 		Invoke("ClimbFadeOut", 3f);
 	}
 
@@ -168,6 +168,7 @@ public class Alkuanimaatio : MonoBehaviour {
 	}
 
 	void RoofDialog() {
+		masto.GetComponent<AudioSource>().Play();
 		dialogue.Add("Tyrone: Everything's fucked...How can a storm do thi...");
 		dialogue.Add("Tyrone: ...");
 		dialogue.Add("Tyrone: Shit, the tower is... it's going to fall over in this storm...");
@@ -185,6 +186,7 @@ public class Alkuanimaatio : MonoBehaviour {
 	}
 
 	void BackInside() {
+		masto.GetComponent<AudioSource>().Stop();
 		FadeTo(0f, null);
 		dialogue.Clear();
 		SetSprite(sprite2);
@@ -206,8 +208,12 @@ public class Alkuanimaatio : MonoBehaviour {
 
 	void RunLeft() {
 		player.GetComponent<IntroCharacter>().Run(-2);
-		friend.GetComponent<IntroCharacter>().Run(-2);
+		Invoke("LateRunLeft", 0.5f);
 		Invoke("OutsideFade", 1.5f);
+	}
+
+	void LateRunLeft() {
+		friend.GetComponent<IntroCharacter>().Run(-2);
 	}
 
 	void OutsideFade() {
@@ -217,6 +223,12 @@ public class Alkuanimaatio : MonoBehaviour {
 	// -----------------------------------------------------------
 
 	void Outside() {
+		var pl = GameObject.Find("BackgroundMusic");
+		if (pl != null) {
+			var music = pl.GetComponent<BgMusic>();
+			music.PlayGameMusic();
+			music.PlayWind();
+		}
 		Application.LoadLevel(2);
 	}
 }

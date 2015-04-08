@@ -5,7 +5,7 @@ public class MainMenu : MonoBehaviour {
 
 	public Font font;
 	private GUIStyle style;
-
+	
 	// Use this for initialization
 	void Start () {
 		style = new GUIStyle();

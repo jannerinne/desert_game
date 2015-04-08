@@ -11,6 +11,9 @@ public class IntroCharacter : MonoBehaviour {
 		Vector3 localScale = transform.localScale;
 		localScale.x = Mathf.Abs(localScale.x) * Mathf.Sign(running);
 		transform.localScale = localScale;
+
+		var footstep = GetComponent<AudioSource>();
+		footstep.Play();
 	}
 
 	// Use this for initialization
