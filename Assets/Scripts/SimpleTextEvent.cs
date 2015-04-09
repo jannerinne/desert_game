@@ -6,8 +6,10 @@ public class SimpleTextEvent : MonoBehaviour {
 	public string[] eventDialogText;
 
 	private GameManagerC manager;
-	public bool used = false;
+	private bool used = false;
 	private GUIStyle style;
+
+	public float radius = 1.0f;
 
 	void Start () {
 		manager = GameObject.Find("GameManager").GetComponent<GameManagerC>();
@@ -20,7 +22,7 @@ public class SimpleTextEvent : MonoBehaviour {
 	}
 
 	bool PlayerIsNear() {
-		return Mathf.Abs(transform.position.x) < 1.0;
+		return Mathf.Abs(transform.position.x) < radius;
 	}
 
 	void OnGUI() {

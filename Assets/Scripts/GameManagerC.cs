@@ -52,6 +52,8 @@ public class GameManagerC : MonoBehaviour {
 	
 	public Paakuva paakuva;
 
+	public Transform bottle;
+
 
 	void Start () {
 		footstepSound = GetComponent<AudioSource>();
@@ -65,7 +67,7 @@ public class GameManagerC : MonoBehaviour {
 	}
 	
 	void OnGUI() {
-		if (dialogue.Count > 0) {
+		if (dialogue.Count > 0 && !dialogue[0].StartsWith("#")) {
 			var w = Screen.width;
 			var h = Screen.height;
 			var rect = new Rect(w * 0.333f, h * 0.1f, w * 0.333f, h * 0.3f);
@@ -110,6 +112,21 @@ public class GameManagerC : MonoBehaviour {
 		}
 		Application.LoadLevel(0);
 	}
+
+	private void HouseIn() {
+		var house = GameObject.Find("broken_house");
+		house.transform.position = Vector3.zero;
+	}
+
+	private void HouseOut() {
+		var house = GameObject.Find("broken_house");
+		house.transform.position = new Vector3(0f, 11f, 0f);
+	}
+
+	private void BottleThrow() {
+		var pos = friend.transform.position + new Vector3(0, 2f, 0f);
+		Instantiate(bottle, pos, Quaternion.identity);
+	}
 	
 	void Update () {
 		if (Input.GetKey(KeyCode.Escape)) {
@@ -125,6 +142,12 @@ public class GameManagerC : MonoBehaviour {
 
 		if (cooldown > 0f) {
 			cooldown -= Time.deltaTime;
+		}
+
+		if (dialogue.Count > 0 && dialogue[0].StartsWith("#")) {
+			string command = dialogue[0].Substring(1);
+			dialogue.RemoveAt(0);
+			Invoke(command, 0f);
 		}
 
 		if (dialogue.Count > 0 && Input.anyKeyDown && cooldown <= 0f) {
@@ -193,7 +216,7 @@ public class GameManagerC : MonoBehaviour {
 				obj.transform.position = pos;
 				
 				// Jos objekti on liian kaukana, niin se poistetaan.
-				if (Mathf.Abs(obj.transform.position.x) > ground.renderer.bounds.size.x * 0.5 + 0.3) {
+				if (Mathf.Abs(obj.transform.position.x) > ground.renderer.bounds.size.x * 0.5f + 1.5f) {
 					Destroy(obj);
 				}
 			}
