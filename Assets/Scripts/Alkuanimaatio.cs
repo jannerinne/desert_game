@@ -34,6 +34,9 @@ public class Alkuanimaatio : MonoBehaviour {
 
 	public Paakuva paakuva;
 
+	public AudioClip zapSound;
+
+
 	void Awake() {
 		guiTexture.pixelInset = new Rect(0f, 0f, Screen.width, Screen.height);
 	}
@@ -120,6 +123,7 @@ public class Alkuanimaatio : MonoBehaviour {
 	}
 
 	void PowerOff() {
+		AudioSource.PlayClipAtPoint(zapSound, Vector3.zero);
 		for(int i=0; i<10; i++) {
 			if (i % 2 == 0) {
 				Invoke("PowerSprite1", i * 0.1f);

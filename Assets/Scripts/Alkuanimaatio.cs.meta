@@ -2,7 +2,19 @@ fileFormatVersion: 2
 guid: 967bec05edb1ec4459399825fb8b5b97
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - sprite1: {instanceID: 0}
+  - sprite2: {instanceID: 0}
+  - sprite3: {instanceID: 0}
+  - masto: {instanceID: 0}
+  - debris: {instanceID: 0}
+  - player: {instanceID: 0}
+  - woman: {instanceID: 0}
+  - friend: {instanceID: 0}
+  - tyrone: {instanceID: 0}
+  - font: {instanceID: 0}
+  - paakuva: {instanceID: 0}
+  - zapSound: {fileID: 8300000, guid: cc61182549f308549a30c77c8923b341, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
