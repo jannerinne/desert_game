@@ -34,7 +34,7 @@ public class GameManagerC : MonoBehaviour {
 	public List<string> dialogue = new List<string>(); // Menossa oleva dialogi.
 	
 	private float scroll = 0f; // Paljonko ollaan liikuttu.
-	private float playerDir = 1f; // Pelaajan suunta, joko -1 tai 1.
+	public float playerDir = 1f; // Pelaajan suunta, joko -1 tai 1.
 	
 	private GUIStyle style;
 
@@ -42,6 +42,7 @@ public class GameManagerC : MonoBehaviour {
 
 	private float cooldown = 0f;
 	private bool dead = false;
+	private bool dying = false;
 
 	private AudioSource footstepSound;
 
@@ -100,6 +101,8 @@ public class GameManagerC : MonoBehaviour {
 		Invoke("StopHeartbeat", 6.0f);
 		Invoke("StartDeathFade", 8f);
 		var anim = player.GetComponent<Animator>();
+		//var dir = Mathf.Sign(transform.localScale.x) * 1f;
+		//player.transform.Translate(dir, 0f, 0f, Space.World);
 		anim.SetBool("Dead", true);
 		anim.SetFloat("PlayerSpeed", 0f);
 		Invoke("GoToMainMenu", 20f);
@@ -150,6 +153,10 @@ public class GameManagerC : MonoBehaviour {
 			fade = fadeTarget;
 		}
 		fadeSprite.color = new Color(1f, 1f, 1f, fade);
+
+		if (dying) {
+			walkSpeed += -walkSpeed * 0.5f * Time.deltaTime;
+		}
 
 		if (dead) {
 			if (footstepSound.isPlaying) {
@@ -262,7 +269,7 @@ public class GameManagerC : MonoBehaviour {
 			*/
 
 			if (eventTimer < 0.0) {
-				eventTimer = 10 + Random.value * 15;
+				eventTimer = 5 + Random.value * 10;
 
 				// Joka toinen on event ja toinen on koriste.
 				if (++eventCount % 2 == 0) {
@@ -281,7 +288,9 @@ public class GameManagerC : MonoBehaviour {
 					}
 					else {
 						// Kaikki tapahtumat ovar ilmestyneet.
-						KillPlayer();
+						dying = true;
+						//KillPlayer();
+						Invoke("KillPlayer", 3f);
 					}
 				}
 				else {
