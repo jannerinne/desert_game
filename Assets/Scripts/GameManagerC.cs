@@ -97,17 +97,17 @@ public class GameManagerC : MonoBehaviour {
 	public void KillPlayer() {
 		dead = true;
 		Invoke("PlayThud", 3.5f);
-		Invoke("StopHeartbeat", 3.0f);
-		Invoke("StartDeathFade", 4f);
+		Invoke("StopHeartbeat", 6.0f);
+		Invoke("StartDeathFade", 8f);
 		var anim = player.GetComponent<Animator>();
 		anim.SetBool("Dead", true);
 		anim.SetFloat("PlayerSpeed", 0f);
-		Invoke("GoToMainMenu", 12f);
+		Invoke("GoToMainMenu", 20f);
 	}
 
 	private void StartDeathFade() {
 		fadeTarget = 1f;
-		fadeSpeed = 0.2f;
+		fadeSpeed = 0.1f;
 	}
 
 	private void PlayThud() {
