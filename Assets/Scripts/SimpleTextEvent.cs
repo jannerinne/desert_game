@@ -13,7 +13,7 @@ public class SimpleTextEvent : MonoBehaviour {
 		manager = GameObject.Find("GameManager").GetComponent<GameManagerC>();
 		style = new GUIStyle();
 		style.wordWrap = true;
-		style.fontSize = 20;
+		style.fontSize = GameManagerC.fontSize;
 		style.normal.textColor = Color.white;
 		style.alignment = TextAnchor.MiddleCenter;
 		style.font = manager.font;

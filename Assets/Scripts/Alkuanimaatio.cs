@@ -32,6 +32,8 @@ public class Alkuanimaatio : MonoBehaviour {
 	private GUIStyle style;
 	public Font font;
 
+	public Paakuva paakuva;
+
 	void Awake() {
 		guiTexture.pixelInset = new Rect(0f, 0f, Screen.width, Screen.height);
 	}
@@ -43,16 +45,17 @@ public class Alkuanimaatio : MonoBehaviour {
 
 		style = new GUIStyle();
 		style.wordWrap = true;
-		style.fontSize = 20;
+		style.fontSize = GameManagerC.fontSize;
 		style.normal.textColor = Color.white;
-		style.alignment = TextAnchor.MiddleCenter;
+		style.alignment = TextAnchor.MiddleLeft; //TextAnchor.MiddleCenter;
+		style.border = new RectOffset(30, 30, 30, 30);
 		style.font = font;
 	}
 
 	void StartDialog() {
 		dialogue.Add("Shaun: Can you find out how we can get to Safetown?");
 		dialogue.Add("Darin: Soon. This sandstorm is messing with the signal.");
-		dialogue.Add("Monique: I hope we find it quickly...We don't have much foor or water left...");
+		dialogue.Add("Monique: I hope we find it quickly...We don't have much food or water left...");
 		dialogue.Add("Shaun: God Damn It! Most of our supplies were in the last safehouse we were holed up in, but damn bandits overran the whole area.");
 		dialogue.Add("Monique: I wouldn't have made it if it wasn't for Darin. I haven't even thanked you properly. Thank you so much for saving my life.");
 		dialogue.Add("Darin: Oh that...it was nothing.");
@@ -89,8 +92,14 @@ public class Alkuanimaatio : MonoBehaviour {
 			var w = Screen.width;
 			var h = Screen.height;
 			var rect = new Rect(w * 0.333f, h * 0.1f, w * 0.333f, h * 0.3f);
-			GUI.Box(rect, ""); // todo: lisää kuva
+			GUI.Box(rect, "");
 			GUI.Box(rect, dialogue[0], style);
+
+			// Naaman piirto.
+			paakuva.Show(new Vector2(rect.x, rect.y), dialogue[0]);
+		}
+		else {
+			paakuva.Hide();
 		}
 	}
 

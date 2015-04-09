@@ -9,6 +9,8 @@ public class GameManagerC : MonoBehaviour {
 	public GameObject background;
 	public GameObject background2;
 
+	public static int fontSize = 30;
+
 	public Transform deadFriendEvent;
 	
 	// Lista mahdollisista tapahtumista. Tapahtumat pitää olla prefabbeina.
@@ -47,6 +49,8 @@ public class GameManagerC : MonoBehaviour {
 	private AudioSource footstepSound;
 
 	public AudioClip thudSound;
+	
+	public Paakuva paakuva;
 
 
 	void Start () {
@@ -54,7 +58,7 @@ public class GameManagerC : MonoBehaviour {
 		normalWalkSpeed = walkSpeed;
 		style = new GUIStyle();
 		style.wordWrap = true;
-		style.fontSize = 20;
+		style.fontSize = fontSize;
 		style.normal.textColor = Color.white;
 		style.alignment = TextAnchor.MiddleCenter;
 		style.font = font;
@@ -65,8 +69,14 @@ public class GameManagerC : MonoBehaviour {
 			var w = Screen.width;
 			var h = Screen.height;
 			var rect = new Rect(w * 0.333f, h * 0.1f, w * 0.333f, h * 0.3f);
-			GUI.Box(rect, ""); // todo: lisää kuva
+			GUI.Box(rect, "");
 			GUI.Box(rect, dialogue[0], style);
+
+			// Naaman piirto.
+			paakuva.Show(new Vector2(rect.x, rect.y), dialogue[0]);
+		}
+		else {
+			paakuva.Hide();
 		}
 	}
 
@@ -93,6 +103,11 @@ public class GameManagerC : MonoBehaviour {
 	}
 
 	private void GoToMainMenu() {
+		var music = GameObject.Find("BackgroundMusic");
+		if (music != null) {
+			music.GetComponent<BgMusic>().StopWind();
+			music.GetComponent<BgMusic>().PlayMenuMusic();
+		}
 		Application.LoadLevel(0);
 	}
 	
@@ -212,6 +227,7 @@ public class GameManagerC : MonoBehaviour {
 					Destroy(friend);
 					friend = null;
 					Invoke("PlayThud", 1.7f);
+					Invoke("StartHeartbeat", 3f);
 				}
 				else if (ev != null) {
 					// Luo uuden tapahtuman.
@@ -224,6 +240,11 @@ public class GameManagerC : MonoBehaviour {
 				}
 			}
 		}
+	}
+
+	void StartHeartbeat() {
+		var beat = GameObject.Find("Heartbeat");
+		beat.GetComponent<AudioSource>().Play();
 	}
 	
 	// Luo satunnaisen tapahtuman.

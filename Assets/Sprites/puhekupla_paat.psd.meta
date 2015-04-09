@@ -6,6 +6,9 @@ TextureImporter:
     21300002: tyrone
     21300004: Shaun
     21300006: Monique
+    21300008: darin
+    21300010: shaun
+    21300012: monique
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -47,15 +50,15 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Darin
+    - name: darin
       rect:
         serializedVersion: 2
         x: 0
         y: 256
         width: 256
         height: 256
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 3
+      pivot: {x: 1, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: tyrone
       rect:
@@ -64,28 +67,28 @@ TextureImporter:
         y: 256
         width: 256
         height: 248
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 3
+      pivot: {x: 1, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Shaun
+    - name: shaun
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 256
         height: 256
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 3
+      pivot: {x: 1, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Monique
+    - name: monique
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 256
         height: 256
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 3
+      pivot: {x: 1, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
