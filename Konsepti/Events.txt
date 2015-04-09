@@ -157,11 +157,45 @@ Darin: A bottle! *drinks from it*
 Darin: GAAH! BLAAH! OIL! That was oil! FUCKING HELL! *throws the bottle away*
 
 
+RANDOM PUHETTA 1:
+
+Darin: Are you sure we are going the right way?
+
+Shaun: uh... Yes.
+
+Darin: Really sure?
+
+Shaun: ...
+
+Darin: Okay, then I trust you with this.
+
+
+RANDOM PUHETTA 2:
+
+Darin: I'm really thirsty... I can't go on much further...
+
+Shaun: Keep on going. I'm sure we're going to find supplies or shelter sooner or later.
+
+
 TIER2 END: *Your buddy dies and collapses to ground.*
 
-Shaun: Damn it man, don't die on me! Come on, breath!
+Shaun: Damn it man, don't die on me!
 
-Shaun: shit...
+Darin: I.. I can't go on...
+
+Shaun: Yes... you can. Please. Please get up...
+
+Darin: Shaun, I... My vision... is blurring...
+
+Shaun: Darin listen to me man, you can make it.
+
+Darin: ...
+
+Shaun: Darin? Darin, answer to me!
+
+Darin: ...
+
+Shaun: He.. He's gone... Goodbye friend.
 
 
 Tier3 : phone booth and phone post
