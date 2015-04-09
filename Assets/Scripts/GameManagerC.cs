@@ -15,16 +15,13 @@ public class GameManagerC : MonoBehaviour {
 	
 	// Lista mahdollisista tapahtumista. Tapahtumat pitää olla prefabbeina.
 	public List<Transform> eventGroup1 = new List<Transform>();
-	//int events1 = 0; // Montako ryhmän 1 tapahtumaa on tapahtunut.
-	
 	public List<Transform> eventGroup2 = new List<Transform>();
-	//int events2 = 0;
-	
 	public List<Transform> eventGroup3 = new List<Transform>();
-	//int events3 = 0;
+
+	int eventCount = 0; // Montako eventtiä yhteensä tullut.
 
 	public List<Transform> decorEvents = new List<Transform>();
-	public float decorTimer = 8f;
+	//public float decorTimer = 8f;
 	
 	public int eventGroupNumber = 1; // Minkä ryhmän eventtejä otetaan.
 	
@@ -54,9 +51,15 @@ public class GameManagerC : MonoBehaviour {
 
 	public Transform bottle;
 
+	public SpriteRenderer fadeSprite;
+	public float fade = 1f;
+	public float fadeTarget = 0f;
+	public float fadeSpeed = 0.5f;
+
 
 	void Start () {
 		footstepSound = GetComponent<AudioSource>();
+		fadeSprite = GameObject.Find("fade").GetComponent<SpriteRenderer>();
 		normalWalkSpeed = walkSpeed;
 		style = new GUIStyle();
 		style.wordWrap = true;
@@ -65,7 +68,7 @@ public class GameManagerC : MonoBehaviour {
 		style.alignment = TextAnchor.MiddleCenter;
 		style.font = font;
 	}
-	
+
 	void OnGUI() {
 		if (dialogue.Count > 0 && !dialogue[0].StartsWith("#")) {
 			var w = Screen.width;
@@ -94,10 +97,17 @@ public class GameManagerC : MonoBehaviour {
 	public void KillPlayer() {
 		dead = true;
 		Invoke("PlayThud", 3.5f);
+		Invoke("StopHeartbeat", 3.0f);
+		Invoke("StartDeathFade", 4f);
 		var anim = player.GetComponent<Animator>();
 		anim.SetBool("Dead", true);
 		anim.SetFloat("PlayerSpeed", 0f);
 		Invoke("GoToMainMenu", 12f);
+	}
+
+	private void StartDeathFade() {
+		fadeTarget = 1f;
+		fadeSpeed = 0.2f;
 	}
 
 	private void PlayThud() {
@@ -132,6 +142,14 @@ public class GameManagerC : MonoBehaviour {
 		if (Input.GetKey(KeyCode.Escape)) {
 			Application.Quit();
 		}
+
+		if (Mathf.Abs(fadeTarget - fade) > 0.05f) {
+			fade += Mathf.Sign(fadeTarget - fade) * Time.deltaTime * fadeSpeed;
+		}
+		else {
+			fade = fadeTarget;
+		}
+		fadeSprite.color = new Color(1f, 1f, 1f, fade);
 
 		if (dead) {
 			if (footstepSound.isPlaying) {
@@ -199,7 +217,7 @@ public class GameManagerC : MonoBehaviour {
 		if (direction != 0.0) {
 			var movement = walkSpeed * Time.smoothDeltaTime * direction;
 			eventTimer -= Time.smoothDeltaTime;
-			decorTimer -= Time.smoothDeltaTime;
+			//decorTimer -= Time.smoothDeltaTime;
 
 			// Kävelyääni.
 			if (!footstepSound.isPlaying) {
@@ -230,6 +248,7 @@ public class GameManagerC : MonoBehaviour {
 		// Tapahtumien luonti.
 		
 		if (direction != 0.0) {
+			/*
 			if (decorTimer < 0.0) {
 				decorTimer = 15 + Random.value * 15;
 				
@@ -240,26 +259,38 @@ public class GameManagerC : MonoBehaviour {
 					Instantiate(ev, new Vector3(x, 0, 0), Quaternion.identity);
 				}
 			}
+			*/
 
 			if (eventTimer < 0.0) {
-				eventTimer = 20 + Random.value * 20;
-				
-				var ev = RandomEvent();
-				if (ev == deadFriendEvent) {
-					Instantiate(ev, friend.transform.position, Quaternion.identity);
-					Destroy(friend);
-					friend = null;
-					Invoke("PlayThud", 1.7f);
-					Invoke("StartHeartbeat", 3f);
-				}
-				else if (ev != null) {
-					// Luo uuden tapahtuman.
-					float x = Mathf.Sign(direction) * (ground.renderer.bounds.size.x * 0.5f + 0.1f);
-					Instantiate(ev, new Vector3(x, 0, 0), Quaternion.identity);
+				eventTimer = 10 + Random.value * 15;
+
+				// Joka toinen on event ja toinen on koriste.
+				if (++eventCount % 2 == 0) {
+					var ev = RandomEvent();
+					if (ev == deadFriendEvent) {
+						Instantiate(ev, friend.transform.position, Quaternion.identity);
+						Destroy(friend);
+						friend = null;
+						Invoke("PlayThud", 1.7f);
+						Invoke("StartHeartbeat", 3f);
+					}
+					else if (ev != null) {
+						// Luo uuden tapahtuman.
+						float x = Mathf.Sign(direction) * (ground.renderer.bounds.size.x * 0.5f + 0.1f);
+						Instantiate(ev, new Vector3(x, 0, 0), Quaternion.identity);
+					}
+					else {
+						// Kaikki tapahtumat ovar ilmestyneet.
+						KillPlayer();
+					}
 				}
 				else {
-					// Kaikki tapahtumat ovar ilmestyneet.
-					KillPlayer();
+					var ev = RandomDecorEvent();
+					if (ev != null) {
+						// Luo uuden koristeen.
+						float x = Mathf.Sign(direction) * (ground.renderer.bounds.size.x * 0.5f + 0.1f);
+						Instantiate(ev, new Vector3(x, 0, 0), Quaternion.identity);
+					}
 				}
 			}
 		}
@@ -268,6 +299,11 @@ public class GameManagerC : MonoBehaviour {
 	void StartHeartbeat() {
 		var beat = GameObject.Find("Heartbeat");
 		beat.GetComponent<AudioSource>().Play();
+	}
+
+	void StopHeartbeat() {
+		var beat = GameObject.Find("Heartbeat");
+		beat.GetComponent<AudioSource>().Stop();
 	}
 	
 	// Luo satunnaisen tapahtuman.
